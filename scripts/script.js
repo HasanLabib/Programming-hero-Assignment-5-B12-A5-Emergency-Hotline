@@ -96,3 +96,21 @@ let clearBtn = getElement(".clear-btn");
 clearBtn.addEventListener("click", function () {
   getElement(".call-history").innerHTML = "";
 });
+
+// Copy function
+function copyFunction(className) {
+  return navigator.clipboard.writeText(
+    parseInt(getElement(className).innerText)
+  );
+}
+
+const copyBtn1 = getElement(".copy-btn-1");
+let copyValue;
+copyBtn1.addEventListener("click", function (e) {
+  copyValue = parseInt(getElement(".copy-value").innerText);
+  copyFunction(".emergency-call-num");
+  copyValue++;
+  getElement(".copy-value").innerText = copyValue;
+  alert("Copied  to clipboard successfully ");
+  e.stopPropagation();
+});
