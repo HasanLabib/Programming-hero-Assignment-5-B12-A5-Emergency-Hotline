@@ -25,16 +25,31 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Font -->
+    <!-- Google Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
+    <!-- Custom Font Class -->
+    <style>
+      .font-hind {
+        font-family: "Hind Madurai", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
-  <body
-    class="mx-auto my-0 max-sm:max-w-[20rem] max-w-[40rem] md:max-w-[70rem] lg:max-w-[100rem] xl:max-w-[120rem] justify-center items-center"
-  >
+  <body class="items-center justify-center mx-auto my-0">
     <!-- NavBar Section -->
-    <header>
+    <header
+      class="max-sm:max-w-[20rem] max-w-[40rem] md:max-w-[70rem] lg:max-w-[100rem] xl:max-w-[120rem] mx-auto my-0"
+    >
       <nav
         class="px-[3.75rem] py-6 flex justify-between items-center flex-col md:flex-row"
       >
-        <div class="nav-img flex items-center">
+        <div class="flex items-center nav-img">
           <img
             src="./B12-A5-Emergency-Hotline/assets/logo.png"
             class="w-[3.125rem] h-[3.125rem] mr-3"
@@ -46,11 +61,11 @@
           </h1>
         </div>
 
-        <div class="flex justify-center items-center gap-5">
+        <div class="flex items-center justify-center gap-5">
           <div
             class="nav-item-1 flex items-center justify-center gap-3 bg-[#41ff6b1a] w-[7.6875rem] h-[3.25rem] rounded-[3.125rem]"
           >
-            <p class="item1-txt font-black text-base">0</p>
+            <p class="text-base font-black item1-txt heart-value">0</p>
             <img
               src="./B12-A5-Emergency-Hotline/assets/heart.png"
               alt=""
@@ -60,7 +75,7 @@
           <div
             class="nav-item-2 flex items-center justify-center gap-3 bg-[#41ff6b1a] w-[7.6875rem] h-[3.25rem] rounded-[3.125rem]"
           >
-            <p class="item2-txt font-black text-base">100</p>
+            <p class="text-base font-black item2-txt coin-value">100</p>
             <img
               src="./B12-A5-Emergency-Hotline/assets/coin.png"
               alt=""
@@ -70,7 +85,7 @@
           <div
             class="nav-item-3 flex items-center justify-center gap-3 bg-[#00A63E] w-[7.6875rem] h-[3.25rem] rounded-[3.125rem]"
           >
-            <p class="item3-txt font-semibold text-base text-white">
+            <p class="text-base font-semibold text-white item3-txt">
               <span>0</span> Copy
             </p>
           </div>
@@ -78,7 +93,91 @@
       </nav>
     </header>
     <!-- NavBar Section End -->
-    <main></main>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="hero-sec-container bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center gap-3 min-h-[13.8125rem] py-3 max-sm:px-5"
+      >
+        <img
+          src="./B12-A5-Emergency-Hotline/assets/logo-dark.png"
+          alt=""
+          class="hero-img max-w-24 max-h-24"
+        />
+        <h1 class="hero-title font-hind text-white text-[2.5rem] font-semibold">
+          জরুরি সেবা ডিরেক্টরি
+        </h1>
+        <p class="text-xl font-semibold text-white hero description font-hind">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </section>
+      <!-- Hero Section End -->
+      <!-- Main Section -->
+      <section
+        class="grid items-center justify-center gap-5 py-10 mx-auto main-sec-container"
+      >
+        <div>
+          <div
+            class="grid grid-cols-1 emergency-sec-container md:grid-cols-2 lg:grid-cols-3"
+          >
+            <div class="p-8 bg-white shadow-sm card-1 rounded-xl">
+              <div class="flex items-center justify-between img-card-1">
+                <img
+                  src="./B12-A5-Emergency-Hotline/assets/emergency.png"
+                  alt="emergency"
+                  srcset=""
+                  class="max-w-[3.75rem] max-h-[3.75rem]"
+                />
+                <button type="button" class="heart-btn-1">
+                  <i class="text-2xl fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="mt-4 mb-6">
+                <p class="text-2xl font-bold font-hind emergency-title">
+                  জাতীয় জরুরি সেবা
+                </p>
+                <p class="text-lg font-roboto emergency-sub-title">
+                  National Emergency
+                </p>
+              </div>
+              <div class="mb-6">
+                <p class="emergency-call-num font-roboto font-bold text-[2rem]">
+                  999
+                </p>
+                <p
+                  class="emergency-tag bg-[#F2F2F2] px-4 py-[0.375rem] rounded-2xl w-28"
+                >
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <button
+                  class="hover:bg-black hover:text-white p-4 rounded-lg text-[#5C5C5C] min-h-10 min-w-44 border-2 border-[#5C5C5C] hover:border-none copy-btn-1"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="bg-[#00A63E] hover:bg-[#045823] text-white p-4 rounded-lg min-h-10 min-w-44 call-btn-1"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="clear-sec-container">
+          <div class="flex items-center justify-between clear-sec-head">
+            <p><i class="fa-regular fa-clock"></i> Call History</p>
+            <button
+              class="clear-btn bg-[#00A63E] hover:bg-[#045823] text-white p-4 rounded-lg min-h-10 min-w-44]"
+            >
+              Clear
+            </button>
+          </div>
+          <div class="'clear-sec-body call-history"></div>
+        </aside>
+      </section>
+    </main>
     <footer></footer>
     <script src="./scripts/script.js"></script>
   </body>
